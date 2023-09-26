@@ -18,6 +18,7 @@ I partially concur that the X1 operates effectively in its standard configuratio
 ## 🚀 Upgrades
 
 - OctoPi
+- Obico for OctoPrint
 - BLTouch for Auto Bed Leveling
 - Marlin + TFT firmware
 - Aluminum Extruder Idler Lever
@@ -27,6 +28,10 @@ I partially concur that the X1 operates effectively in its standard configuratio
 - Jaw Couplers with Rubber Interface
 - POM Anti-Backlash Nuts
 - LED light
+
+## 📷 Obico for OctoPrint
+
+Obico is an OctoPrint plugin designed to enhance 3D printing workflows. It provides improved visualizations, analytics, and additional features to optimize your printing experience, making it a valuable tool for managing your 3D printer and prints within the OctoPrint ecosystem.
 
 ## 🛠️ Compatibility and Usage with OctoPrint
 
@@ -50,6 +55,7 @@ Menu =>Settings=>Connection=>ON
 ## 📚 References
 - [Artillery Sidewinder X1 Upgrades – Paid and Free](https://3dprintbeginner.com/sidewinder-x1-upgrades/)
 - [Artillery Sidewinder X1 / X2 / Genius TFT FW + Marlin FW (for X1) + M600 support + Marlin mode …](https://3dfablab.wordpress.com/2021/12/07/artillery-sidewinder-x1-x2-genius-tft-fw-marlin-fw-for-x1-m600-support-marlin-mode/)
+- [Self-hosted Obico Server Guides](https://www.obico.io/docs/server-guides/)
 - [BLTouch for Auto Bed Leveling](https://www.youtube.com/watch?v=1uuxTWJZowo) 
 - [Sidewinder X1 Gantry Support](https://www.youtube.com/watch?v=9TPCdesemes) 
 - [Squaring the gantry on the Sidewinder X1 3D printer, the EASY way.](https://www.youtube.com/watch?v=KmeYlX6eXGE) 
