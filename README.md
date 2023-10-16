@@ -13,21 +13,68 @@ While many acknowledge the Sidewinder X1 as a proficient machine in its original
 I partially concur that the X1 operates effectively in its standard configuration. My Artillery Genius (the X1’s counterpart) currently operates with its default settings and produces impressive prints. However, I opted to enhance the X1 to address minor issues I encountered and to compile guides and tutorials.
 
 <br>
-
    
 ## 🚀 Upgrades
 
-- OctoPi
-- Obico for OctoPrint
-- BLTouch for Auto Bed Leveling
-- Marlin + TFT firmware
-- Aluminum Extruder Idler Lever
-- Gantry support
-- Squaring the gantry
-- Better Quality Nozzles
-- Jaw Couplers with Rubber Interface
-- POM Anti-Backlash Nuts
-- LED light
+- [Small upgrades](#small-upgrades)
+    - [Aluminum Extruder Idler Lever](#aluminum-extruder-idler-lever)
+    - [Gantry Support](#gantry-support)
+    - [Squaring the Gantry](#squaring-the-gantry)
+    - [Better Quality Nozzles](#better-quality-nozzles)
+    - [Jaw Couplers with Rubber Interface](#jaw-couplers-with-rubber-interface)
+    - [POM Anti-Backlash Nuts](#pom-anti-backlash-nuts)
+    - [Bi-Metal Heatbreak](#bi-metal-heatbreak)
+- [LED Light](#led-light)
+- [BLTouch for Auto Bed Leveling](#bltouch-for-auto-bed-leveling)
+- [Marlin + TFT Firmware](#marlin--tft-firmware)
+- [OctoPi](#octopi)
+- [Obico for OctoPrint](#obico)
+
+## 🤏 Small upgrades
+
+### Aluminum Extruder Idler Lever
+
+Description of the upgrade: Replace the stock plastic extruder idler lever with a more durable and efficient aluminum lever for better extrusion performance.
+
+### Gantry Support
+
+Description of the upgrade: Strengthen the printer's gantry system to improve stability and precision during printing.
+
+### Squaring the Gantry
+
+Description of the upgrade: Instructions on how to properly square the gantry for optimal printer performance and print accuracy.
+
+### Better Quality Nozzles
+
+Description of the upgrade: Upgrade to higher-quality nozzles to enhance printing precision and reduce clogs.
+
+### Jaw Couplers with Rubber Interface
+
+Description of the upgrade: Upgrade the jaw couplers to those with a rubber interface to minimize vibrations and improve print quality.
+
+### POM Anti-Backlash Nuts
+
+Description of the upgrade: Replace standard nuts with POM anti-backlash nuts for smoother and more precise movements.
+
+### Bi-Metal Heatbreak
+
+Description of the upgrade: Replace the heatbreak with a bi-metal version for improved heat dissipation and reduced heat creep.
+
+## 💡 LED Light
+
+Description of the upgrade: Install LED lighting to illuminate the print bed and enhance visibility during printing.
+
+## 💉 BLTouch for Auto Bed Leveling
+
+Description of the upgrade: Implement BLTouch for automated bed leveling, ensuring a level print surface for each print job.
+
+## 🖥️ Marlin + TFT Firmware
+
+Description of the upgrade: Upgrade the printer's firmware to Marlin and integrate a TFT touchscreen for an improved user interface and enhanced control.
+
+## 🐙 OctoPi
+
+Description of the upgrade: Set up OctoPi to remotely monitor and manage the 3D printer, providing convenient access and control.
 
 ## 📷 Obico for OctoPrint
 
@@ -43,12 +90,12 @@ Line Number is Not Last Line Number +1 Last Line 1686.
 
 In order to avoid the problem, when printing with Octoprint/Pronterface etc… put the TFT in “Listening Mode” pressing on the button:
 ``` 
-Menu =>Settings=>Connection=>ON
+Menu => Settings => Connection => ON
 ```
 
 ### 📌 Note:
 
-- This limitation is not due to bugs on the TFT firmware but itis  an hardware limitation on MKS GEN L v1.0 main board
+- This limitation is not due to bugs on the TFT firmware but it is an hardware limitation on MKS GEN L v1.0 main board
 - The mode state is stored on FLASH allowing to restore the mode at startup. This allows to power on/off the printer remotely and to control the printer via USB without the need of any touch (from the user) on the display to engage the mode
 
 
@@ -58,4 +105,4 @@ Menu =>Settings=>Connection=>ON
 - [Self-hosted Obico Server Guides](https://www.obico.io/docs/server-guides/)
 - [BLTouch for Auto Bed Leveling](https://www.youtube.com/watch?v=1uuxTWJZowo) 
 - [Sidewinder X1 Gantry Support](https://www.youtube.com/watch?v=9TPCdesemes) 
-- [Squaring the gantry on the Sidewinder X1 3D printer, the EASY way.](https://www.youtube.com/watch?v=KmeYlX6eXGE) 
+- [Squaring the gantry on the Sidewinder X1 3D printer, the EASY way.](https://www.youtube.com/watch?v=KmeYlX6eXGE)
