@@ -28,7 +28,7 @@ I partially concur that the X1 operates effectively in its standard configuratio
 - [BLTouch for Auto Bed Leveling](#-bltouch-for-auto-bed-leveling)
 - [Marlin + TFT Firmware](#-marlin--tft-firmware)
 - [OctoPi](#-octopi)
-- [Obico for OctoPrint](#-obico)
+- [Obico for OctoPrint](#-obico-for-octoprint)
 
 ## 🤏 Small upgrades
 
@@ -139,7 +139,7 @@ Customize OctoPrint by installing plugins that enhance its functionality, such a
 Use OctoPrint's web interface to remotely monitor and control your Sidewinder X1. You can start, pause, and stop prints, monitor print progress, and even receive notifications.
 
 10. Secure Access (Optional):
-Consider securing your OctoPrint instance by enabling access control, using HTTPS, and configuring firewall rules to restrict access to trusted IP addresses. Refer to [Obico for OctoPrint](#obico).
+Consider securing your OctoPrint instance by enabling access control, using HTTPS, and configuring firewall rules to restrict access to trusted IP addresses. Refer to [Obico for OctoPrint](#-obico-for-octoprint).
 
 Sample wiring inside of the Sidewinder X1 for a cleaner look:
 
