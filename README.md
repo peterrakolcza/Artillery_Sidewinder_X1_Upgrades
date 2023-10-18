@@ -16,7 +16,7 @@ I partially concur that the X1 operates effectively in its standard configuratio
    
 ## 🚀 Upgrades
 
-- [Small upgrades](#small-upgrades)
+- [Small upgrades](#-small-upgrades)
     - [Aluminum Extruder Idler Lever](#aluminum-extruder-idler-lever)
     - [Gantry Support](#gantry-support)
     - [Squaring the Gantry](#squaring-the-gantry)
@@ -24,11 +24,11 @@ I partially concur that the X1 operates effectively in its standard configuratio
     - [Jaw Couplers with Rubber Interface](#jaw-couplers-with-rubber-interface)
     - [POM Anti-Backlash Nuts](#pom-anti-backlash-nuts)
     - [Bi-Metal Heatbreak](#bi-metal-heatbreak)
-- [LED Light](#led-light)
-- [BLTouch for Auto Bed Leveling](#bltouch-for-auto-bed-leveling)
-- [Marlin + TFT Firmware](#marlin--tft-firmware)
-- [OctoPi](#octopi)
-- [Obico for OctoPrint](#obico)
+- [LED Light](#-led-light)
+- [BLTouch for Auto Bed Leveling](#-bltouch-for-auto-bed-leveling)
+- [Marlin + TFT Firmware](#-marlin--tft-firmware)
+- [OctoPi](#-octopi)
+- [Obico for OctoPrint](#-obico)
 
 ## 🤏 Small upgrades
 
