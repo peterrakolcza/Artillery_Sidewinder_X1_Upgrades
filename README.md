@@ -123,7 +123,7 @@ G29 P3    ; infer the rest of the mesh values
 G29 P3    ; infer the rest of the mesh values again
 M420 S1 V ; enabled leveling and report the new mesh
 G29 S0    ; Save UBL mesh points to slot 0 (EEPROM).
-G29 F 10.0 ; Set Fade Height for correction at 10.0 mm.
+G29 F 10.0 ; Set Fade Height for correction at 10.0 mm. Just to make sure...
 G29 A     ; Activate the UBL System.
 M500      ; save the current setup to EEPROM
 M140 S0   ; cooling down the bed
@@ -139,9 +139,9 @@ G29 A     ; make sure UBL is active
 ```
 
 Things worth knowing:
-- `G29 L<index>`: If no index is given, load the previously-activated mesh. The given mesh index will be used for subsequent Load and Store operations.
+- `G29 L<index>`: will restore the active state (active/inactive) to what it was when the mesh was saved. That means sending `G29 A` first is useless.
 - `M420`: Get and/or set bed leveling state.
-- `G29 F 10.0`: Fade height (UBL only! For others use `M420 Z`). If no number is specified for the command, 10mm is assumed to be reasonable.
+- `G29 F 10.0`: Fade height (UBL only! For others use `M420 Z<fade>`). If no number is specified for the command, 10mm is assumed to be reasonable. Also, `G29 F<fade>` doesn't need to be sent unless you want to change the fade height from what was set in the firmware.
 
 ## 🖥️ Marlin + TFT Firmware
 
