@@ -26,6 +26,7 @@ I partially concur that the X1 operates effectively in its standard configuratio
     - [Bi-Metal Heatbreak](#bi-metal-heatbreak)
 - [LED Light](#-led-light)
 - [BLTouch for Auto Bed Leveling](#-bltouch-for-auto-bed-leveling)
+    - [UBL (Unified Bed Leveling)](#-ubl-(unified-bed-leveling)) 
 - [Marlin + TFT Firmware](#-marlin--tft-firmware)
 - [OctoPi](#-octopi)
 - [Obico for OctoPrint](#-obico-for-octoprint)
@@ -102,10 +103,49 @@ After finishing everything the connection to the main board should look like thi
 
 ![Main board wiring](/images/IMG_0178.jpg)
 
+### 📐 UBL (Unified Bed Leveling)
+
+The Unified Bed Leveling System (UBL) provides a comprehensive set of resources to produce the best bed leveling results possible. See the full Unified Bed Leveling documentation for more details.
+
+Unified Bed Leveling System (UBL) offers two options for bed leveling: 
+1) leveling before every print
+2) loading an existing mesh from EEPROM which was created earlier
+
+In our scenario, the second option is ideal as the glass surface does not undergo frequent changes. This means that once the mesh is established and saved, it can be reliably applied to subsequent prints without the need for repeated leveling procedures. This ensures consistent print quality and saves time by avoiding repetitive calibration steps.
+
+To manually create a mesh and save it to the EEPROM (Slot 0):
+```
+G28       ; home all axes
+M420 S0   ; Turning off bed leveling while probing, if firmware is set to restore after G28
+M190 S65  ; (optional) wait for the bed to get up to temperature
+G29 P1    ; automatically populate mesh with all reachable points
+G29 P3    ; infer the rest of the mesh values
+G29 P3    ; infer the rest of the mesh values again
+M420 S1 V ; enabled leveling and report the new mesh
+G29 S0    ; Save UBL mesh points to slot 0 (EEPROM).
+G29 F 10.0 ; Set Fade Height for correction at 10.0 mm.
+G29 A     ; Activate the UBL System.
+M500      ; save the current setup to EEPROM
+M140 S0   ; cooling down the bed
+```
+
+Start GCODE for loading an existing mesh from EEPROM which was created earlier:
+```
+M190 S65  ; preheat bed for ABL adjustments
+G28       ; home all axes
+G29 L0    ; load the mesh from Slot 0
+G29 J2    ; measure bed tilt and apply to the existing mesh
+G29 A     ; make sure UBL is active
+```
+
+Things worth knowing:
+- `G29 L<index>`: If no index is given, load the previously-activated mesh. The given mesh index will be used for subsequent Load and Store operations.
+- `M420`: Get and/or set bed leveling state.
+- `G29 F 10.0`: Fade height (UBL only! For others use `M420 Z`). If no number is specified for the command, 10mm is assumed to be reasonable.
+
 ## 🖥️ Marlin + TFT Firmware
 
 Upgrade the printer's firmware to Marlin and integrate a TFT touchscreen for an improved user interface and enhanced control. Use the included firmware in the repository for the main board (aswx1_marlin_fw_2.1.2_bltouch_waggster_mod_z_max_used.rar) and TFT panel (artillery_tft_fw_1.27.x_patch_9.5.rar).
-
 
 ## 🐙 OctoPi
 
