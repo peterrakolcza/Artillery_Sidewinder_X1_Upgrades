@@ -129,9 +129,9 @@ M500      ; save the current setup to EEPROM
 M140 S0   ; cooling down the bed
 ```
 
-Start GCODE for loading an existing mesh from EEPROM which was created earlier:
+Start GCODE for loading an existing mesh from EEPROM (Slot 0) which was created earlier:
 ```
-M190 S65  ; preheat bed for ABL adjustments
+M190 S65  ; preheat bed for mesh adjustments
 G28       ; home all axes
 G29 L0    ; load the mesh from Slot 0
 G29 J2    ; measure bed tilt and apply to the existing mesh
